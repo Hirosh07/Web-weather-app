@@ -11,6 +11,8 @@
             <input type="'text" placeholder="ENTER CITY NAME" spellcheck="false">
             <button><img src="images/search.png"></button>
         </div>
+        <div class="error-message" style="display: none;">City not found. Please enter a valid city name.</div>
+
         <div class="weather">
             <img src="images/rain.png" class="weather-icons" alt="weather-icon">
             <h1 class="temp">22<sup>o</sup>C</sup></h1>
@@ -67,16 +69,15 @@ async function checkWeather(city) {
 
     document.querySelector(".weather").style.display = "block";
 }
-
-// ...
-
     
         searchbtn.addEventListener("click", () => {
+            console.log("Button clicked");
             checkWeather(searchbox.value);
         });
 
         searchbox.addEventListener("keydown", (event) => {
             if (event.keyCode === 13) { // Check if the "Enter" key was pressed (key code 13)
+                console.log("Enter key pressed");
                 checkWeather(searchbox.value);
             }
         });
