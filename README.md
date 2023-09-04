@@ -6,3 +6,5 @@ In this project i used the open API Key offered by the Openweathermap where u ca
 This project still needs some updation in JAVASCRIPT code.
 Still making this app updation in design and code.
 I need some recommendation for some changes.
+------------------------------------------------------------
+I finally completed all my changes in this web-application.
